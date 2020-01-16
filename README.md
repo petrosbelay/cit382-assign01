@@ -3,17 +3,17 @@ Created with CodeSandbox
 
 For this assignment, you'll be creating a React app that will list a summary of two quiz results. The results will include the name of the quiz, the average score, the maximum score and the student name with the maximum score, and the minimum score and the student name with the minimum score. Below is the sample output:
 
-Overview
+# Overview
 
-Requirements
+## Requirements
 
 Below are the requirements for this assignment.
 
-Quiz Data
+#### Quiz Data
 
 Create a file in your src folder called data.js. This file will consist of a single object called quizData. You will need to export the object using the following code:
 
-export const quizData = { };
+``` export const quizData = { }; ```
 
 The quizData object has the following format:
 
@@ -36,7 +36,7 @@ quizData = {
 };
 
 ```
-You will use two websites to generate 10 random names, and 10 random numbers between 0 and 10. Split the results into two groups to represent two separate quizzes. Update your quizData object with the 10 names and scores (five for each quiz).
+#### You will use two websites to generate 10 random names, and 10 random numbers between 0 and 10. Split the results into two groups to represent two separate quizzes. Update your quizData object with the 10 names and scores (five for each quiz).
 
 To generate the random names, use:
 
@@ -48,37 +48,37 @@ https://www.random.org/integers/?num=10&min=1&max=10&col=1&base=10&format=html&r
 
 You will  need to import the file in App.js using the following code:
 
-import { quizData } from "./data.js";
+``` import { quizData } from "./data.js"; ```
 
-Average Function
+#### Average Function
 
 You will need to create a function called average() with the following signature:
 
-average(data)
+``` average(data) ```
 
 Input: The data parameter is the quizData object.
 
 Output: The average() function will work through the quizData object contents, and return a string array that contains the final output, where each array element is the contents shown in the output above for the quiz results.  Each array element is a string with no JSX.
 
-You must use Array.push() with a template literal (Links to an external site.) to create the string for each array element.
+You must use ```Array.push()``` with a template literal (Links to an external site.) to create the string for each array element.
 
-AverageJSX Function
+#### AverageJSX Function
 
 You will need to create a fuction called averageJSX() with the following signature:
 
-averageJSX(data)
+```averageJSX(data)```
 
 Input: The data parameter is the output array from the average() function.
 
 Output: The averageJSX() function will return a JSX object that consists of a div for each row in the string array.
 
-You will need to update the App() function to call both average() and averageJSX() functions.
+You will need to update the ```App()``` function to call both ```average()``` and ```averageJSX()``` functions.
 
 Striped Output
 
-You will need to use CSS to stripe the quiz results rows as shown in the output above. You will need to create two new class selectors, QuizRowOdd and QuizRowEven, and use the nth-child pseudo-selector and the > descendant selector. You will also need to add the classes into the App() function to engage the CSS selectors for striping.
+You will need to use CSS to stripe the quiz results rows as shown in the output above. You will need to create two new class selectors, ```QuizRowOdd``` and ```QuizRowEven```, and use the nth-child pseudo-selector and the > descendant selector. You will also need to add the classes into the ```App()``` function to engage the CSS selectors for striping.
 
-Documentation and Whitespace
+#### Documentation and Whitespace
 
 Good use of function and methods, and variable names, promote self-documentation of your code. Regardless, you should still consider adding comments to your code that improves the understanding of how the code works. The documentation can also serve as an outline of how to solve the problem. In general, you should consider adding comments that describe the functionality of blocks of code.
 
